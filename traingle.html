@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Traingle calculate</title>
+</head>
+<body>
+    <div class="container">
+        <div class="home__btn">
+            <a href="index.html">হোমে ফিরে যাই</a>
+        </div>
+        <div class="taingle__calculate">
+            <div class="traingle__length-get">
+                <label for="length">ত্রিভুজের ৩টি বাহুর দৈর্ঘ দিন: </label>
+                <input type="number" name="length" id="length" class="L1"/>
+                <input type="number" name="length" id="length"class="L2"/>
+                <input type="number" name="length" id="length"class="L3"/>
+                <label for="unit">একক যুক্ত করুন: </label>
+                <select name="unit" id="unit">
+                    <option value="মিটার">মিটার</option>
+                    <option value="সেন্টিমিটার">সেন্টিমিটার</option>
+                    <option value="ফুট">ফুট</option>
+                </select>
+                <a id="countBtn">গননা করুন</a>
+            </div>
+            <div class="result hide">
+                <h3>ফলাফল</h3>
+                <div class="resultArea">
+                <label for="area">ত্রিভুজের ক্ষেত্রফল: </label> ‍<span id="area"></span>
+                <span id="areaUnit"></span>
+                </div>
+                <div class="resultScope">
+                    <label for="scope">ত্রিভুজের পরিধি: </label>‍
+                    <span id="scope"></span>
+                    <span id="scopeUnit"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

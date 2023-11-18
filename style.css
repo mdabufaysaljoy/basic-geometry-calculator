@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/**
+*! index section starts
+**/
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid crimson;
+    width: 600px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.486);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.btn__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+a {
+    border: none;
+    padding: 5px 15px;
+    background-color: #00a2ff;
+    color: #fff;
+    font-weight: lighter;
+    border-radius: 5px;transition: all .3s ease-in-out;
+}
+a:hover {
+background-color: #0084d1;
+box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.486);
+}
+
+/**
+*! index section ends
+**/
+
+/**
+*! traingle section starts
+**/
+.result{
+    margin-top: 35px;
+}
+.traingle__length-get{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    gap: 15px;
+}
+.traingle__length-get input{
+width: 60px;
+padding: 5px 10px;
+}
+span{
+    color: #00a2ff;
+    font-weight: bold;
+}
+.hide{
+    display: none;
+}
+
+/**
+*! traingle section ends
+**/
+
+
+
+
+/**
+*! responsive  section starts
+**/
+
+@media (max-width:700px) {
+    .container {
+        width: 480px;
+    }
+}
+
+@media (max-width:550px) {
+    .container {
+        width: 380px;
+    }
+    .traingle__length-get{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .traingle__length-get a{
+        width: 150px;
+    }
+}
+
+@media (max-width:425px) {
+    .container {
+        width: 320px;
+    }
+}
+
+@media (max-width:350px) {
+    .container {
+        width: 270px;
+    }
+}
+@media (max-width:300px) {
+    .container {
+        width: 200px;
+    }
+    .traingle__length-get{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
