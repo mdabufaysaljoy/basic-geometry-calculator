@@ -17,7 +17,6 @@ let outScopeUnitFt = document.querySelector("#scope_Unit_As_Ft");
 let traingleCountBtn = document.querySelector("#traingle_Count");
 let traingelresultBox = document.querySelector(".traingle_Result");
 
-
 const meterToFt = (m) => (m * 3.28).toFixed(2);
 const meterToCM = (m) => (m * 100).toFixed(2);
 const sqMeterToSqFt = (sqm) => (sqm * 10.7639).toFixed(2);
@@ -48,20 +47,20 @@ traingleCountBtn.addEventListener("click", function () {
       outScopeFt.innerHTML = `${meterToFt(scope)} ফুট`;
       break;
     case "সেন্টিমিটার":
-       outAreaM.innerHTML = `${sqCmToSqMeter(areaOfTriangle)} বর্গ মিটার`;
-       outScopeM.innerHTML = `${cmToMeter(scope)} মিটার`;
-       outAreaCM.innerHTML = `${areaOfTriangle} বর্গ ${inputUnit}`;
-       outScopeCM.innerHTML = `${scope} ${inputUnit}`;
-       outAreaFt.innerHTML = `${sqCmToSqFt(areaOfTriangle)} বর্গ ফুট`;
-       outScopeFt.innerHTML = `${cmToFt(scope)} ফুট`;
+      outAreaM.innerHTML = `${sqCmToSqMeter(areaOfTriangle)} বর্গ মিটার`;
+      outScopeM.innerHTML = `${cmToMeter(scope)} মিটার`;
+      outAreaCM.innerHTML = `${areaOfTriangle} বর্গ ${inputUnit}`;
+      outScopeCM.innerHTML = `${scope} ${inputUnit}`;
+      outAreaFt.innerHTML = `${sqCmToSqFt(areaOfTriangle)} বর্গ ফুট`;
+      outScopeFt.innerHTML = `${cmToFt(scope)} ফুট`;
       break;
     case "ফুট":
-       outAreaM.innerHTML = `${sqFtToSqMeter(areaOfTriangle)} বর্গ মিটার`;
-       outScopeM.innerHTML = `${ftToMeter(scope)} মিটার`;
-       outAreaCM.innerHTML = `${sqFtToSqCM(areaOfTriangle)} বর্গ সেন্টিমিটার`;
-       outScopeCM.innerHTML = `${ftToCm(scope)} সেন্টিমিটার`;
-       outAreaFt.innerHTML = `${areaOfTriangle} বর্গ ${inputUnit}`;
-       outScopeFt.innerHTML = `${scope} ফুট`;
+      outAreaM.innerHTML = `${sqFtToSqMeter(areaOfTriangle)} বর্গ মিটার`;
+      outScopeM.innerHTML = `${ftToMeter(scope)} মিটার`;
+      outAreaCM.innerHTML = `${sqFtToSqCM(areaOfTriangle)} বর্গ সেন্টিমিটার`;
+      outScopeCM.innerHTML = `${ftToCm(scope)} সেন্টিমিটার`;
+      outAreaFt.innerHTML = `${areaOfTriangle} বর্গ ${inputUnit}`;
+      outScopeFt.innerHTML = `${scope} ফুট`;
       break;
 
     default:
