@@ -52,6 +52,8 @@ body {
 a {
     border: none;
     padding: 5px 15px;
+    display: block;
+    margin: .5rem 0;
     background-color: #00a2ff;
     color: #fff;
     font-weight: lighter;

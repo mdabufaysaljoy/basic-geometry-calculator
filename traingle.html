@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Traingle calculate</title>
 </head>
+
 <body>
     <div class="container">
         <div class="home__btn">
@@ -14,31 +16,50 @@
         <div class="taingle__calculate">
             <div class="traingle__length-get">
                 <label for="length">ত্রিভুজের ৩টি বাহুর দৈর্ঘ দিন: </label>
-                <input type="number" name="length" id="length" class="L1"/>
-                <input type="number" name="length" id="length"class="L2"/>
-                <input type="number" name="length" id="length"class="L3"/>
+                <input type="number" name="length" id="length" class="L1" />
+                <input type="number" name="length" id="length" class="L2" />
+                <input type="number" name="length" id="length" class="L3" />
                 <label for="unit">একক যুক্ত করুন: </label>
                 <select name="unit" id="unit">
                     <option value="মিটার">মিটার</option>
                     <option value="সেন্টিমিটার">সেন্টিমিটার</option>
                     <option value="ফুট">ফুট</option>
                 </select>
-                <a id="countBtn">গননা করুন</a>
+                <a id="traingle_Count">গননা করুন</a>
             </div>
-            <div class="result hide">
+            <div class="traingle_Result hide">
                 <h3>ফলাফল</h3>
-                <div class="resultArea">
-                <label for="area">ত্রিভুজের ক্ষেত্রফল: </label> ‍<span id="area"></span>
-                <span id="areaUnit"></span>
+                <div class="result_Of_Area_As_Meter">
+                    <label for="area_As_Meter">ত্রিভুজের ক্ষেত্রফল (মিটার): </label> ‍<span id="area_As_Meter"></span>
+                    <span id="area_Unit_As_Meter"></span>
                 </div>
-                <div class="resultScope">
-                    <label for="scope">ত্রিভুজের পরিধি: </label>‍
-                    <span id="scope"></span>
-                    <span id="scopeUnit"></span>
+                <div class="result_Of_Schope_As_Meter">
+                    <label for="scope_As_Meter">ত্রিভুজের পরিধি (মিটার): </label>‍
+                    <span id="scope_As_Meter"></span>
+                    <span id="scope_Unit_As_Meter"></span>
+                </div>
+                <div class="result_Of_Area_As_CM">
+                    <label for="area_As_CM">ত্রিভুজের ক্ষেত্রফল (সেন্টিমিটার): </label> ‍<span id="area_As_CM"></span>
+                    <span id="area_Unit_As_CM"></span>
+                </div>
+                <div class="result_Of_Schope_As_CM">
+                    <label for="scope_As_CM">ত্রিভুজের পরিধি (সেন্টিমিটার): </label>‍
+                    <span id="scope_As_CM"></span>
+                    <span id="scope_Unit_As_CM"></span>
+                </div>
+                <div class="result_Of_Schope_As_Ft">
+                    <label for="area_As_Ft">ত্রিভুজের ক্ষেত্রফল (ফুট): </label> ‍<span id="area_As_Ft"></span>
+                    <span id="area_Unit_As_Ft"></span>
+                </div>
+                <div class="result_Of_Schope_As_Ft">
+                    <label for="scope_As_Ft">ত্রিভুজের পরিধি (ফুট): </label>‍
+                    <span id="scope_As_Ft"></span>
+                    <span id="area_Unit_As_Ft"></span>
                 </div>
             </div>
         </div>
     </div>
     <script src="main.js"></script>
 </body>
+
 </html>
